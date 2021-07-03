@@ -2477,15 +2477,15 @@ h3 {
     width: 100%;
 }
 .processTiles1 {
-    background-color: #ECC19B;
-    margin-bottom: 10px;
-}
-.processTiles2 {
     background-color: #E5584C;
     margin-bottom: 10px;
 }
-.processTiles3 {
+.processTiles2 {
     background-color: #709189;
+    margin-bottom: 10px;
+}
+.processTiles3 {
+    background-color: #ECC19B;
     margin-bottom: 10px;
 }
 .card-title2 {
