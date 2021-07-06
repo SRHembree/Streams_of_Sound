@@ -2502,13 +2502,13 @@ h3 {
 }
 .card-title {
     font-family: "futura-pt";
-    color: #1B3B43;
+    color: black;
     font-style: normal;
     font-size: 22px;
 }
 .card-text {
     font-family: "roboto-condensed";
-    color: #3A7673;
+    color: black;
     font-style: italic;
     font-size: 15px;
 }
