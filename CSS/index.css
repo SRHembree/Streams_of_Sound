@@ -2532,12 +2532,12 @@ h3 {
 }
 .imgSizing {
     width: auto;
-    min-height: 340px;
+    min-height: 245px;
     object-fit: cover;
 }
 .imgSizing1 {
     width: auto;
-    min-height: 30px;
+    min-height: 200px;
     object-fit: cover;
 }
 .contentTitle {
