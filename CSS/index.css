@@ -64,10 +64,10 @@
             overflow: hidden; 
             position: absolute; 
             left: 0; 
-            top: 10%; 
+            top: 5%; 
             width: 100%; 
             height: 100em; 
-            z-index: 0; 
+            z-index: 0;  
         }
         .flower {
             position: absolute;
@@ -101,9 +101,9 @@
             background-size: 40px; 
             overflow: hidden; 
             position: absolute; 
-            transform: translateY(-30%);
+            transform: translateY(-2%);
             width: 100%; 
-            height: 60%; 
+            height: 50%; 
             z-index: 0; 
         }
         .flowerPower {
@@ -171,6 +171,22 @@
         overflow-y: auto;
         position: relative;
     }
+    #tocsection {
+        display: none;
+        visibility: hidden;
+    }
+    .toc {
+        display: none;
+        visibility: hidden;
+    }
+    #tableOfContents {
+        display: none; 
+        visibility: hidden;
+    }
+    .toc-section {
+        display: none;
+        visibility: hidden;
+    }
     .d-sm-block {
         display: block!important;
     }
@@ -193,9 +209,9 @@
         background-size: 40px; 
         overflow: hidden; 
         position: absolute; 
-        transform: translateY(-45%);
+        transform: translateY(-20%);
         width: 100%; 
-        height: 50%; 
+        /* height: 60%;  */
         z-index: 0; 
     }
     .flowerPower {
@@ -389,221 +405,43 @@
         margin-right: 5% !important;
     }
 }
-@media only screen and (max-width: 767px) {
-    /* for screens between phones and tablets screens */
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        /* top: 29.5em;  */
-        z-index: 1000; 
-        height: 0;
-        padding-left: 1em; 
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999 !important; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
-    }
-    .d-none {
-        display: none!important;
-    }
-    .flowerContainer {
-        background-size: 160px; 
-        overflow: hidden; 
-        position: absolute; 
-        left: -.75em; 
-        top: 235%; 
-        width: 100%; 
-        height: 300%; 
-        z-index: 0; 
-    }
-    .flower {
-        position: absolute;
-        width: 100%;
-    }
-    .flower img {
-        width: 105%; 
-        animation: big-spin 160s linear infinite; 
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-20%);
-        width: 100%; 
-        height: 50%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    .backgroundCS {
-        padding-left:20px;
-        padding-right: 20px;
-        padding-top: 5px;
-        background-color: white;
-        border-radius: 20px;
-        position: relative;
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
-}
 @media only screen and (max-device-width: 767px) {
     /* for screens between phones and tablets screens */
-    .d-none {
-        display: none!important;
-    }
     #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
+        display: none; 
+        visibility: hidden;
     }
     #tableOfContents {
         display: none; 
-    }
-    .toc {
-        position: sticky;
-        top: 24.5em; 
-        z-index: 1000; 
-        height: 0;
-        margin-left: -2.5em !important; 
     }
     .toc-section {
         width: 115px; 
         height: 30px;
     }
     .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
+        display: none;
+        visibility: hidden;
+    }
+    .d-none {
+        display: none!important;
     }
     .flowerContainer {
-        background-size: 160px; 
-        overflow: hidden; 
-        position: absolute; 
-        left: -.75em; 
-        top: 235%; 
-        width: 100%; 
-        height: 300%; 
-        z-index: 0; 
+        display: none;
+        visibility: hidden;
     }
     .flower {
-        position: absolute;
-        width: 100%;
+        visibility: hidden;
+        display: none;
     }
     .flower img {
-        width: 105%; 
-        animation: big-spin 160s linear infinite; 
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
+        display: none;
+        visibility: hidden;
     }
     .flowerFooter {
         background-size: 40px; 
         overflow: hidden; 
         position: absolute; 
-        transform: translateY(-20%);
+        transform: translateY(-2%);
         width: 100%; 
         height: 50%; 
         z-index: 0; 
@@ -654,79 +492,29 @@ filter: drop-shadow(2px 2px 0 white)
         drop-shadow(2px -2px 0 white)
         drop-shadow(-2px -2px 0 white);
 
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
+    filter: drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px 2px 0 white)
+            drop-shadow(2px -2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+            /* margin-right: 5% !important; */
     }
 }
-@media only screen and (max-device-width: 480px) {
-   /* styles for mobile browsers smaller than 480px; (iPhone) */
-    /* <!-- Sidebar (TOC) CSS --> */
-    .d-none {
-        display: none!important;
-    }
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        /* top: 30.5em;  */
-        z-index: 1000; 
-        height: 0;
-        margin-left: -10% !important; 
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
-    }
-    .flowerContainer {
-        background-size: 160px; 
+@media only screen and (max-width: 995px) {
+    .flowerFooter {
+        background-size: 40px; 
         overflow: hidden; 
         position: absolute; 
-        left: -.75em; 
-        top: 165%; 
-        width: 103%; 
-        height: 300%; 
+        transform: translateY(-2%);
+        width: 100%; 
+        height: 50%; 
         z-index: 0; 
     }
-    .flower {
-        position: absolute;
-        width: 100%;
+    .flowerPower {
+        position: relative;
     }
-    .flower img {
-        width: 105%; 
-        animation: big-spin 160s linear infinite; 
+    .flowerPower img {
+        width: 100%; 
+        animation: big-spin 160s linear infinite;
     }
     @keyframes big-spin {
         0% {
@@ -735,6 +523,69 @@ filter: drop-shadow(2px 2px 0 white)
         100% {
            transform: rotate(360deg);
         }
+    }
+    .socials {
+        padding: 0px !important;
+        color: white;
+    }
+    .socials:hover {
+        color: #E5584C;
+    }
+    .icon-background {
+        color: #686868;
+    }
+    .footerElements {
+        margin: auto;
+        text-align: center;
+    }
+    .footerLogo img {
+        margin: auto;
+        display: block;
+        -webkit-filter: drop-shadow(2px 2px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(2px -2px 0 white)
+        drop-shadow(-2px -2px 0 white);
+
+    filter: drop-shadow(2px 2px 0 white)
+            drop-shadow(-2px 2px 0 white)
+            drop-shadow(2px -2px 0 white)
+            drop-shadow(-2px -2px 0 white);
+            /* margin-right: 5% !important; */
+    }
+    #dropdownMenuLink {
+        background-color: white;
+        color: #0D1D21 !important;
+        border-color: white;
+        align-items: left !important;
+        font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+        border-color: #E5584C !important;
+        border-width: 2px;
+    }
+    #dropdownMenuLink:hover {
+        background-color: #E5584C;
+        color: white !important;
+    }
+    .navbar {
+        padding-top: 1%;
+        margin-bottom: 2%;
+    }
+    .navbar-nav {
+        background-color: white;
+        margin-top: -1.5%;
+        align-content: center;
+    }
+    .nav-link {
+        background-color: white;
+        text-align: center;
+        margin-top: 0px !important;
+    }
+    .navbar-nav > li {
+        font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .d-none {
+        display: none!important;
     }
     .backgroundCS {
         padding-left:20px;
@@ -744,1584 +595,40 @@ filter: drop-shadow(2px 2px 0 white)
         border-radius: 20px;
         position: relative;
     }
-    .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-20%);
-        width: 100%; 
-        height: 50%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
-}
-@media only screen and (device-width: 411px) and (height:823px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 30em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -10% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-20%);
-        width: 100%; 
-        height: 45%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
-@media only screen and (device-width: 411px) and (height: 731px) {
-    /* <!-- Sidebar (TOC) CSS --> */
-    .d-none {
-        display: none!important;
-    }
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        top: 24.5em; 
-        z-index: 1000; 
-        height: 0;
-        margin-left: -10% !important; 
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
-    }
-}
-@media only screen and (device-width: 414px) and (height: 736px) {
-    /* <!-- Sidebar (TOC) CSS --> */
-    .d-none {
-        display: none!important;
-    }
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        top: 24.5em; 
-        z-index: 1000; 
-        height: 0;
-        margin-left: -10% !important; 
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
-    }
-}
- @media only screen and (device-width: 540px) and (height:720px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 24em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -7% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-25%);
-        width: 100%; 
-        height: 50%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
-@media only screen and (device-width: 375px) and (height:667px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 20.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -12% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-15%);
-        width: 100%; 
-        height: 55%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
- @media only screen and (device-width: 375px) and (height:812px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 29.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -10% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-20%);
-        width: 100%; 
-        height: 45%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
- @media only screen and (device-width: 320px) and (height: 568px) {
-    /* <!-- Sidebar (TOC) CSS --> */
-    .d-none {
-        display: none!important;
-    }
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        bottom: 3%; 
-        left: 1em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        top: 14.5em; 
-        z-index: 1000; 
-        height: 0;
-        margin-left: -13% !important; 
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 3px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-        padding-left: 5px; 
-    }
- }
-@media only screen and (max-device-width: 360px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 24.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -12% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-15%);
-        width: 100%; 
-        height: 55%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-                drop-shadow(-2px 2px 0 white)
-                drop-shadow(2px -2px 0 white)
-                drop-shadow(-2px -2px 0 white);
-
-        filter: drop-shadow(2px 2px 0 white)
-                drop-shadow(-2px 2px 0 white)
-                drop-shadow(2px -2px 0 white)
-                drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
- @media only screen and (device-width: 360px) and (height:640px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 18.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -12% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-15%);
-        width: 100%; 
-        height: 55%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-                drop-shadow(-2px 2px 0 white)
-                drop-shadow(2px -2px 0 white)
-                drop-shadow(-2px -2px 0 white);
-
-        filter: drop-shadow(2px 2px 0 white)
-                drop-shadow(-2px 2px 0 white)
-                drop-shadow(2px -2px 0 white)
-                drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
-@media only screen and (max-device-width: 350px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 14.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -12% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-20%);
-        width: 100%; 
-        height: 60%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
-@media only screen and (max-device-width: 300px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 19.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -15% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-15%);
-        width: 100%; 
-        height: 50%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
- @media only screen and (device-width: 280px) and (height: 653px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-     /* <!-- Sidebar (TOC) CSS --> */
-     .d-none {
-        display: none!important;
-    }
-     #tocsection {
-         display: block; 
-         position: fixed; 
-         bottom: 3%; 
-         left: 1em; 
-         z-index: 99; 
-         cursor: pointer; 
-         padding: 10px; 
-         border-radius: 10px; 
-         font-size: 18px; 
-         color: white; 
-         background-color: #E5584C; 
-         border: none; 
-         outline: none; 
-         opacity: 0.5; 
-     }
-     #tocsection:hover {
-         opacity: 1.5; 
-     }
-     #tableOfContents {
-         display: none; 
-     }
-     .toc {
-         position: sticky;
-         top: 19.5em; 
-         z-index: 1000; 
-         height: 0;
-         margin-left: -15% !important; 
-     }
-     .toc-section {
-         width: 115px; 
-         height: 30px;
-     }
-     .toc-entry {
-         display: block; 
-         background-color: white; 
-         font-family: "pt-sans";
-         width: 100px; 
-         margin: 3px; 
-         color: #9A9999; 
-         box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-         padding-left: 5px; 
-     }
-     .flowerContainer {
-         background-size: 160px; 
-         overflow: hidden; 
-         position: absolute; 
-         left: -.75em; 
-         top: 165%; 
-         width: 103%; 
-         height: 300%; 
-         z-index: 0; 
-     }
-     .flower {
-         position: absolute;
-         width: 100%;
-     }
-     .flower img {
-         width: 105%; 
-         animation: big-spin 160s linear infinite; 
-     }
-     @keyframes big-spin {
-         0% {
-            transform: rotate(0deg);
-         }
-         100% {
-            transform: rotate(360deg);
-         }
-     }
-     .backgroundCS {
-         padding-left:20px;
-         padding-right: 20px;
-         padding-top: 5px;
-         background-color: white;
-         border-radius: 20px;
-         position: relative;
-     }
-     .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-15%);
-        width: 100%; 
-        height: 50%; 
-        z-index: 0; 
-    }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
-    }
- }
-@media only screen and (device-width: 768px) and (height: 1024px) {
-   /* default iPad screens */
-    /* <!-- Sidebar (TOC) CSS --> */
-    .d-none {
-        display: none!important;
-    }
-    #tocsection {
-        display: block; 
-        position: fixed; 
-        top: 65%; 
-        left: 2.5em; 
-        z-index: 99; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 18px; 
-        color: white; 
-        background-color: #E5584C; 
-        border: none; 
-        outline: none; 
-        opacity: 0.5; 
-    }
-    #tocsection:hover {
-        opacity: 1.5; 
-    }
-    #tableOfContents {
-        display: none; 
-    }
-    .toc {
-        position: sticky;
-        top: 40%; 
-        z-index: 1000; 
-        height: 0;
-        margin-left: 2px; 
-        text-align: center;
-    }
-    .toc-section {
-        width: 115px; 
-        height: 30px;
-    }
-    .toc-entry {
-        display: block; 
-        background-color: white; 
-        font-family: "pt-sans";
-        width: 100px; 
-        margin: 1px; 
-        color: #9A9999; 
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-    }
     .flowerContainer {
-        background-size: 160px; 
-        overflow: hidden; 
-        position: absolute; 
-        left: -4em; 
-        top: -50%; 
-        width: 60%; 
-        height: 300%; 
-        z-index: 0; 
+        display: none;
+        visibility: hidden;
     }
     .flower {
-        position: absolute;
-        left: 0%;
-        top: 57em;
+        visibility: hidden;
+        display: none;
     }
     .flower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite; 
+        display: none;
+        visibility: hidden;
     }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
+    #tocsection {
+        display: none;
+        visibility: hidden;
     }
-    .backgroundCS {
-        padding-left:70px;
-        padding-right: 70px;
-        padding-top: 5px;
-        background-color: white;
-        border-radius: 20px;
-        position: relative;
+    .toc {
+        display: none;
+        visibility: hidden;
     }
-    .flowerFooter {
-        background-size: 40px; 
-        overflow: hidden; 
-        position: absolute; 
-        transform: translateY(-25%);
-        width: 100%; 
-        height: 35%; 
-        z-index: 0; 
+    #tableOfContents {
+        display: none; 
+        visibility: hidden;
     }
-    .flowerPower {
-        position: relative;
-    }
-    .flowerPower img {
-        width: 100%; 
-        animation: big-spin 160s linear infinite;
-    }
-    @keyframes big-spin {
-        0% {
-           transform: rotate(0deg);
-        }
-        100% {
-           transform: rotate(360deg);
-        }
-    }
-    /* Footer Styles */
-    .socials {
-        padding: 0px !important;
-        color: white;
-    }
-    .socials:hover {
-        color: #E5584C;
-    }
-    .icon-background {
-        color: #686868;
-    }
-    .footerElements {
-        margin: auto;
-        text-align: center;
-    }
-    .footerLogo img {
-        margin: auto;
-        display: block;
-        -webkit-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-
-filter: drop-shadow(2px 2px 0 white)
-        drop-shadow(-2px 2px 0 white)
-        drop-shadow(2px -2px 0 white)
-        drop-shadow(-2px -2px 0 white);
-        /* margin-right: 5% !important; */
+    .toc-section {
+        display: none;
+        visibility: hidden;
     }
 }
-
 html {
     scroll-behavior: smooth; 
 } 
 .batman {
-    height: 310px; 
+    height: 300px; 
     min-width: 130px; 
     margin-bottom: -310px; 
     position: sticky; 
@@ -2337,9 +644,10 @@ html {
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 5000px auto; 
-    padding-top: 2em;
+    padding-top: 4em;
     padding-bottom: 2em;
     width: 100%; 
+    z-index: -100;
 }
 /* <!-- Nav CSS --> */
 #dropdownMenuLink {
