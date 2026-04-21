@@ -25,14 +25,14 @@
         }
         .section-nav {
             padding-left: 10px;
-            border-left: 1px solid #E5584C;
+            border-left: 1px solid #754eb8;
             display: block;
         }
         .tlc {
             display: block;
         }
         .tlc:hover {
-            color: #E5584C;
+            color: #754eb8;
         }
         .bd-toc {
             padding-top: 1.5rem;
@@ -127,7 +127,7 @@
             color: white;
         }
         .socials:hover {
-            color: #E5584C;
+            color: #b6a7c1;
         }
         .icon-background {
             color: #686868;
@@ -192,13 +192,13 @@
     }
     .section-nav {
         padding-left: 10px;
-        border-left: 1px solid #E5584C;
+        border-left: 1px solid #754eb8;
     }
     .tlc {
         display: block;
     }
     .tlc:hover {
-        color: #E5584C;
+        color: #754eb8;
     }
     .bd-toc {
         padding-top: 1.5rem;
@@ -235,7 +235,7 @@
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1
     }
     .icon-background {
         color: #686868;
@@ -289,13 +289,13 @@
     }
     .section-nav {
         padding-left: 10px;
-        border-left: 1px solid #E5584C;
+        border-left: 1px solid #754eb8;
     }
     .tlc {
         display: block;
     }
     .tlc:hover {
-        color: #E5584C;
+        color: #754eb8;
     }
     #tocsection {
         display: none;
@@ -381,7 +381,7 @@
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -475,7 +475,7 @@
         color: white;
     }
     .socials:hover {
-        color: #E5584C;
+        color: #b6a7c1;
     }
     .icon-background {
         color: #686868;
@@ -558,11 +558,11 @@
         border-color: white;
         align-items: left !important;
         font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-        border-color: #E5584C !important;
+        border-color: white !important;
         border-width: 2px;
     }
     #dropdownMenuLink:hover {
-        background-color: #E5584C;
+        background-color: #754eb8;
         color: white !important;
     }
     .navbar {
@@ -658,7 +658,7 @@ html {
     font-family: "Gill Sans",Helvetica,Arial,sans-serif;
 }
 #dropdownMenuLink:hover {
-    background-color: #E5584C;
+    background-color: #754eb8;
     color: white !important;
 }
 .navbar {
@@ -677,11 +677,11 @@ html {
         border-color: white;
         align-items: left !important;
         font-family: "Gill Sans",Helvetica,Arial,sans-serif;
-        border-color: #E5584C !important;
+        border-color: white !important;
         border-width: 2px;
     }
     #dropdownMenuLink:hover {
-        background-color: #E5584C;
+        background-color: #754eb8;
         color: white !important;
     }
     .navbar {
@@ -711,7 +711,7 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: 0;
-    border-top: 1px solid #DC423C;
+    border-top: 1px solid #8c75b5;
 }
 /* Main Content CSS */
 .card-header {
@@ -719,7 +719,7 @@ hr {
     font-size: 22px;
     font-style: normal;
     color: white;
-    background-color: #B0453C;
+    background-color: #9C8067;
 }
 .card-bottom {
     font-family: "roboto-condensed";
@@ -755,7 +755,7 @@ h3 {
     height: auto;
     max-width: 100%;
     border: 3;
-    color: #E5584C;
+    color: #4a5e45;
     border-style: solid;
     border-radius: 5px;
     z-index: 0;
@@ -765,7 +765,7 @@ h3 {
     height: auto;
     max-width: 100%;
     border: 3;
-    color: #ECC19B;
+    color: #754eb8;
     border-style: solid;
     border-radius: 5px;
     z-index: 0;
@@ -775,7 +775,7 @@ h3 {
     height: auto;
     max-width: 100%;
     border: 3;
-    color: #9BAFAA;
+    color: #50406d;
     border-style: solid;
     border-radius: 5px;
     z-index: 0;
@@ -785,15 +785,15 @@ h3 {
     width: 100%;
 }
 .processTiles1 {
-    background-color: #E5584C;
+    background-color: #4a5e45;
     margin-bottom: 10px;
 }
 .processTiles2 {
-    background-color: #709189;
+    background-color: #50406d;
     margin-bottom: 10px;
 }
 .processTiles3 {
-    background-color: #ECC19B;
+    background-color: #754eb8;
     margin-bottom: 10px;
 }
 .card-title2 {
@@ -877,7 +877,7 @@ h3 {
     padding-top: 5px;
 }
 .projectLinks:hover {
-    background-color: #E5584C;
+    background-color: #754eb8;
     color: white;
     font-style: bold;
 }
